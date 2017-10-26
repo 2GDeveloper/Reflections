@@ -3,6 +3,18 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="index.css"/>
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+		<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				console.log("jquery ready!!!");
+				$("#start").click(function(){
+						let msg = "Learing via doing.Check developer.mozilla.org for more info";
+						window.alert(msg);
+						window.location="https://developer.mozilla.org";
+				});
+			});
+		</script>
+
 	</head>
 	<body>
 		<h1 class="mails">Creating help system for Reflections procject!!!</h1>
@@ -13,7 +25,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-					<button class="btn btn-success">Start reading this help</button>
+					<button class="btn btn-success" id="start">Start reading this help</button>
 			</div>
 			<div class="col-sm-6">
 					<h2>Please consider using Jenkins</h2>
